@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'android';
+    src: url(../fontes/idroid.otf) format(opentype);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #00e07b7e;
+}
+
+header {
+    background-image: linear-gradient(to top, #317A59, #23AD6F);
+    color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.411);
+    min-width: 300px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+header > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+header > p {
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+nav > ul{
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px;
+}
+
+nav > ul > li:hover{
+    text-decoration: underline;
+    background-color: #00E07A;
+}
+
+main > h1, main > h2 {
+    font-family: 'android';
+    color: #317A59;
+    margin: 15px 0px;
+    padding: 5px;
+}
+
+main > h2 {
+    background-color: #00e07b34;
+}
+
+main p {
+    text-indent: 20px;
+    text-align: justify;
+}
+main a, .destaque {
+    color: #317A59;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a[target="_blank"]::after {
+    content: "🔗";
+}
+
+main a[target="_self"]:hover {
+    text-decoration: underline;
+}
+
+main picture img, main picture source{
+    width: 100%;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    min-width: 200px;
+    max-width: 1000px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#bugdroid {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+
+main section {
+    margin: 10px;
+}
+
+#video {
+    background-color: #317A59;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+main iframe {
+    width: 90%;
+}
+
+main #extra{
+    margin: 10px;
+    background-color: #00e07b6c;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main #extra ul {
+    list-style-type: none; 
+    columns: 2;
+}
+
+main #extra p {
+    padding: 0px 20px;
+    margin: 20px 0px;
+}
+
+main #extra h2 {
+    padding: 15px;
+    margin: 0px;
+    margin: -10px -10px 0px -10px;
+    background-color: #23AD6F;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main #extra ul li::before {
+    content: "✔";
+}
+
+.lista {
+    display: inline-block;
+}
+
+#div2 {
+    float: right;
+}
+
+footer {
+    background-color: #317A59;
+    color: #00E07A;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.creditos {
+    color: white;
+}

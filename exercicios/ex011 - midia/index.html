@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagen dinamica</h1>
+    <p>tente aumentar e diminuir a tela do seu navegador, e ver como as imagens dinamicas funcionam</p>
+
+    <h2>Imagem começando da mais pequena</h2>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" 
+        type="image/png">
+        <img src="imagens/foto-p.png" alt="imagem flexivel">
+    </picture>
+
+    <h2>Imagem começando da mais grande</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" 
+        type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <audio preload="metadata" controls>
+        <source src="midia/Dead Wrong - Jeremy Blake.mp3" type="audio/mpeg">
+        <source src="midia/Dead Wrong - Jeremy Blake.ogg" type="audio/ogg">
+        <source src="midia/Dead Wrong - Jeremy Blake.wav" type="audio/wav">
+
+        <p>Infelizmente seu navegador não é compativel com audio <a href="midia/Dead Wrong - Jeremy Blake.mp3">clique aqui</a> para baixar a musica</p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dropdown</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav li, nav a{
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+
+        nav a {
+            padding: 10px;
+        }
+
+        nav ul {
+            background-color: dimgray;
+        }
+
+        nav li a:hover{
+            background-color: aqua;
+            text-decoration: underline;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: dimgray;
+        }
+
+        .dropdown:hover .dropdown-menu a, .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Serviços</a>
+                <div class="dropdown-menu">
+                    <a href="#">Serviço 1</a>
+                    <a href="#">Serviço 2</a>
+                    <a href="#">Serviço 3</a>
+                    <a href="#">Serviço 4</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Fale conosco</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Topicos</a>
+                <div class="dropdown-menu">
+                    <a href="#">Topico 1</a>
+                    <a href="#">Topico 2</a>
+                    <a href="#">Topico 3</a>
+                    <a href="#">Topico 4</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
