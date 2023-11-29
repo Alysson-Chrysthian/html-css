@@ -29,18 +29,17 @@ header, footer {
 
 header h1 {
     font-family: var(--fonte-secundaria);    
-    font-size: 4.5em;
+    font-size: 10vw;
 }
 
 header aside {
     font-family: var(--fonte-terciaria);
 }
 
-header aside a, footer p, footer a {
-    text-decoration: none;
+aside a, footer a {
     font-weight: bold;
-
-    color: var(--fonte-secundaria);
+    color: white;
+    text-decoration: none;
 }
 
 header aside a:hover, footer a:hover {
@@ -48,20 +47,55 @@ header aside a:hover, footer a:hover {
 }
 
 main {
+    font-size: 3vw;
+    line-height: 6vw;
     font-family: var(--fonte-principal);
 }
 
-main article section {
-    margin: 60px 0px;
+main article > section {
+    margin: 50px 40px;
 }
 
-main article {
-    margin: 0px 40px;
+main section p {
+    margin-bottom: 70px;
+}
+
+
+.background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right bottom;
+
+    padding: 10vw 5vw;
+
+    box-shadow: inset 1vw 2vw 3vw rgba(0, 0, 0, 0.26);
+}
+
+.background p {
+    margin: 0;
+}
+
+#background-1 {
+    background-image: url(../imagens/background001.jpg);
+}
+
+#background-2 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+.background-text {
+    padding: 3vw;
+    width: 40vw;
+    color: white;
+    background-color: var(--transparent);
 }
 
 footer {
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 10px;
+    font-family: var(--fonte-terciaria);
+    padding: 20px;
 }
 
 footer a {
