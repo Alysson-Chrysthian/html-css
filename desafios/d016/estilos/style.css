@@ -2,7 +2,9 @@
 
 :root {
     --cor-1: #885BFA;
-    --cor-2: #68A2FC;
+    --cor-2: #46c2fc;
+    --cor-3: #21c5c5;
+    --cor-4: #5A93FA;
     --font-padrão: Arial, Verdana, sans-serif;
 }
 
@@ -10,6 +12,7 @@
     margin: 0px;
     padding: 0px;
     font-family: var(--font-padrão);
+    box-sizing: border-box;
 }
 
 
@@ -19,14 +22,15 @@ body {
 
 main {
     background-color: white;
-    height: 500px;
-    width: 280px;
+    height: 540px;
+    width: 290px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     margin: auto;
     border-radius: 30px;
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.363);
 }
 
 section#login h1 {
@@ -41,39 +45,84 @@ section#login p {
 
 /* formulario */
 section#login form {
-    width: 100%;
     margin: auto;
     text-align: center;
 }
 
-section#login div {
-    position: relative;
+section#login div.inf {
     margin: 7px;
+    position: relative;
     border: 3px solid var(--cor-1);
     border-radius: 6px;
     background-color: var(--cor-1);
 }
 
 section#login span {
+    color: white;
     transform: scale(1.35);
     position: absolute;
     left: 4px;
 }
 
-section#login input {
+section#login div.inf input {
     width: 220px;
-    height: 25px;
+    height: 30px;
     transform: translate(20px);
     border-radius: 6px;
 }
 
-section#login input::placeholder {
+section#login div.inf input::placeholder {
     padding: 6px;
+    font-weight: bold;
+}
+
+section#login div.inf input:hover {
+    background-color: aquamarine;
+}
+
+section#login div#enviar input {
+    color: white;
+    margin: 0px 7px;
+    border-radius: 5px;
+    background-color: var(--cor-2);
+    width: 95%;
+    padding: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+section#login div#enviar input:hover {
+    background-color: var(--cor-3);
+}
+
+section#login div#esqueci-senha {
+    margin: 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+section#login div#esqueci-senha:hover, section#login div#esqueci-senha:hover a, section#login div#esqueci-senha:hover span {
+    background-color: var(--cor-3);
+    color: white;
+}
+
+section#login div#esqueci-senha a {
+    color: var(--cor-2);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 7px;
+}
+
+section#login div#esqueci-senha span {
+    color: var(--cor-2);
+    font-size: 1.7em;
+    transform: translate(22px,-5px);
 }
 /* fim-formulario */    
 
 aside#background {
-    height: 50%;
+    height: 45%;
     background-image: url(../imagens/building.jpg);
     background-position: center center;
     background-size: cover;
