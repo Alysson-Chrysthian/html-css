@@ -1,1 +1,10 @@
 @charset "UTF-8";
+
+:root {
+    --cor-1: #885BFA;
+    --cor-2: #46c2fc;
+    --cor-3: #21c5c5;
+    --cor-4: #5A93FA;
+    --font-padrão: Arial, Verdana, sans-serif;
+}
+

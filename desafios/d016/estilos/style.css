@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
 
 body {
     background-color: var(--cor-1);
@@ -41,6 +45,8 @@ section#login h1 {
 
 section#login p {
     margin: 7px;
+    text-align: justify;
+    text-indent: 20px;
 }
 
 /* formulario */
@@ -85,7 +91,7 @@ section#login div#enviar input {
     margin: 0px 7px;
     border-radius: 5px;
     background-color: var(--cor-2);
-    width: 95%;
+    width: 275px;
     padding: 9px;
     font-weight: bold;
     cursor: pointer;
