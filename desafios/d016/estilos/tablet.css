@@ -10,6 +10,7 @@
 
 body {
     background-image: linear-gradient(to bottom, var(--cor-1), var(--cor-2));
+    overflow: hidden;
 }
 
 main {
